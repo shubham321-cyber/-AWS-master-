@@ -1,0 +1,17 @@
+What I have learned & implemented:
+AMI (Amazon Machine Image): This is the "Soul" of the server. I used Ubuntu 24.04 LTS as the Operating System to host my applications.
+
+Instance Types: I practiced with the t3.micro (Free Tier). This taught me how to choose the right machine based on the project's requirements.
+
+Key Pairs (.pem): This is my "Digital Key." I learned how to securely connect to my server using SSH from my local terminal and why setting the right permissions (chmod 400) is critical.
+
+Security Groups: My server's personal bodyguard. I configured rules to allow Port 80 (HTTP) for public web traffic and Port 22 (SSH) only for my management access.
+
+🚀 Practical Experience: Setting up a Live Web Server
+I didn't just launch a server; I made it functional:
+
+Manual Configuration: Connected via SSH and installed Apache2 to host a live website.
+
+Troubleshooting: I solved the "site not loading" issue by understanding the difference between HTTP (80) and HTTPS (443) and ensuring the Security Group rules were correct.
+
+Custom VPC Deployment: I learned how to move away from default settings and launch an EC2 instance inside a Custom VPC with its own Public Subnet and Internet Gateway.
