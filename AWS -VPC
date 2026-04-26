@@ -1,0 +1,28 @@
+🌐 2. Amazon VPC (Virtual Private Cloud)
+Human Style Explanation: If AWS is a big city, a VPC is my own "Private Gated Society." Inside this society, I decide who can enter, which roads are open, and which houses are private. It is the foundation of network security in the cloud.
+
+🛠️ Networking Concepts I Implemented:
+Subnetting (The Rooms): I divided my network into two parts:
+
+Public Subnet: Accessible from the internet (for Web Servers).
+
+Private Subnet: Hidden from the internet (for Databases/Secure data).
+
+Internet Gateway (IGW): This is the "Main Entrance Gate" of my society. Without this, no one from the internet can visit my VPC.
+
+Route Tables (The GPS): These are the maps that tell the data where to go. I configured a Public Route Table to direct traffic to the Internet Gateway so my servers could talk to the world.
+
+Security Layers (Firewalls): * Security Groups: Acts like a guard for each server.
+
+NACLs: Acts like a security check at the society gate (Subnet level).
+
+🚀 Practical Hands-on: Building a Custom Network
+I didn't use the default AWS settings. Instead, I built everything from scratch:
+
+VPC Creation: Defined my own IP range using CIDR (10.0.0.0/16).
+
+Connectivity: Created and attached an Internet Gateway to my Custom VPC.
+
+Public Access: Enabled "Auto-assign Public IP" so my EC2 instances could be reachable.
+
+Verification: Successfully launched an EC2 instance in my Custom Public Subnet and verified internet access using the ping command.
